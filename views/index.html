@@ -17,8 +17,8 @@
 		{% for tweet in tweets %}
 		<div class="row-md-3">
 			<img width='15%' style="float:left" src="https://img.clipartfox.com/4fb4b1347eb577829be1056bb710d447_face-silhouette-free-clipart-woman-face-silhouette_1500-1287.jpeg">
-			<div class='span4'> <div class="content-heading"><h3>{{tweet.name}}</h3>
-			<p style="clear:both"> {{ tweet.content }}</p></div>
+			<div class='span4'> <div class="content-heading"><h3><a href="/users/{{tweet.name}}">{{tweet.name}}</a></h3>
+			<p style="clear:both"><a href="/tweets/{{tweet.id}}"> {{ tweet.content }}</a></p></div>
 			</div>
 		</div>
 
